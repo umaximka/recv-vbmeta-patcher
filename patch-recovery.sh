@@ -1,5 +1,5 @@
 #!/bin/bash
-
+wget -O recovery.img https://github.com && lz4 -B6 --content-size recovery.img recovery.img.lz4
 if [ -f recovery.img.lz4 ]; then
 	lz4 -B6 --content-size -f recovery.img.lz4 recovery.img
 fi
